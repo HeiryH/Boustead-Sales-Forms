@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../public/img/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="../public/css/styles.css" />
+    <link rel="stylesheet" href="../public/css/printables.css" />
+    <link rel="stylesheet" href="../public/css/base.min.css"/>
+    <link rel="stylesheet" href="../public/css/fancy.min.css"/>
+    <link rel="stylesheet" href="../public/css/main.css"/>
+    <script src="../public/js/compatibility.min.js"></script>
+    <script src="../public/js/theViewer.min.js"></script>
+    <script>
+    try{
+    theViewer.defaultViewer = new theViewer.Viewer({});
+    }catch(e){}
+    </script>
+
+</head>
+
+<body onbeforeunload="return myFunction()">
+
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
+        <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light">Boustead Forms</div>
+            <div class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/admin">Admin</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/printables">Generate
+                    Form</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Overview</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Events</a>
+                <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Profile</a>
+            </div>
+        </div>
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+            <!-- Top navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"><span
+                            class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                            <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hi <%= user.name %></a>
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#!">Action</a>
+                                    <a class="dropdown-item" href="#!">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="/users/logout">Logout</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Page content-->
+            <div>
+                <button onclick="window.print()" class="btn btn-primary">Print this page</button>
+                <a href="/printables/invoiceformpage" class="btn btn-secondary"> New  Form </a>
+            </div>
+            
+            <div id="page-container">
+                <div id="pf1" class="pf w0 h0" data-page-no="1">    
+                    <div class="pc pc1 w0 h0">
+                        <img class="bi x0 y0 w1 h1" alt="" src="../public/img/bg1.png"/>
+                        <div class="c x1 y1 w2 h2">
+                
+                
+                            <span class="t m0 x2 h3 y2 ff1 fs0 fc0 sc0 ls0 ws0"> MVO No. <%= invform.invNumber %> </span>    
+                            
+                        </div>
+                        <div class="c x0 y3 w3 h4">
+                            <div class="t m0 x2 h5 y4 ff1 fs1 fc0 sc0 ls0 ws0">BSB Branch :</div>
+                        </div>
+                        <div class="c x3 y3 w4 h4">
+                            <div class="t m0 x2 h5 y4 ff1 fs1 fc0 sc0 ls0 ws0">KB Branch :</div>
+                        </div>
+                        <div class="c x0 y5 w5 h6">
+                        <div class="t m0 x2 h7 y6 ff2 fs2 fc0 sc0 ls0 ws0">Lot 24,29 &amp; 30 Beribi Industrial Complex II,</div>
+                    </div>
+                    <div class="c x3 y5 w6 h6">
+                        <div class="t m0 x2 h7 y6 ff2 fs2 fc0 sc0 ls0 ws0">Lot No 8989, Units 1-4, Jalan Pandan 7, Kg. Pandan</div></div>
+                        <div class="c x1 y5 w7 h6">
+                            <div class="t m0 x2 h5 y7 ff1 fs1 fc0 sc0 ls0 ws0">Date : </div>
+                        </div>
+                        <div class="c x0 y8 w5 h4">
+                            <div class="t m0 x2 h7 y6 ff2 fs2 fc0 sc0 ls0 ws0"> Gadong BE1118, Negara Brunei Darussalam</div>
+                        </div>
+                        <div class="c x3 y8 w8 h4">
+                            <div class="t m0 x2 h7 y6 ff2 fs2 fc0 sc0 ls0 ws0">KA1931, Kuala Belait, Brunei Darussalam.</div>
+                        </div>
+                        <div class="c x0 y9 w9 h4">
+                            <div class="t m0 x2 h7 y6 ff2 fs2 fc0 sc0 ls0 ws0">Tel : 2431333          Fax : 2420459</div>
+                        </div>
+                        <div class="c x3 y9 w4 h4">
+                            <div class="t m0 x2 h7 y6 ff2 fs2 fc0 sc0 ls0 ws0">Tel : 3334284</div>
+                        </div>
+                        <div class="c x4 y9 wa h4">
+                            <div class="t m0 x2 h7 y6 ff2 fs2 fc0 sc0 ls0 ws0">Fax : 3334286</div>
+                        </div>
+                        <div class="c x1 ya wb h8">
+                            <div class="t m0 x2 h9 yb ff1 fs3 fc0 sc0 ls0 ws0">Inv. No :</div>
+                        </div>
+                        <div class="c x1 yc wb ha">
+                            <div class="t m0 x2 h9 yd ff1 fs3 fc0 sc0 ls0 ws0">Deal No :</div>
+                        </div>
+                        <div class="c x0 ye wc hb">
+                            <div class="t m0 x2 hc yf ff3 fs3 fc0 sc0 ls0 ws0">1.</div></div><div class="c x5 ye wd hb"><div class="t m0 x2 hc yf ff3 fs3 fc0 sc0 ls0 ws0">PARTICULARS OF CUSTOMER :-</div></div><div class="c x5 y10 we hd"><div class="t m0 x2 he y11 ff4 fs3 fc0 sc0 ls0 ws0">Name:</div></div><div class="c x5 y12 we h8"><div class="t m0 x2 he yf ff4 fs3 fc0 sc0 ls0 ws0">Address (H)</div></div><div class="c x6 y12 wf h8"><div class="t m0 x2 he yf ff4 fs3 fc0 sc0 ls0 ws0">Tel No :</div></div><div class="c x5 y13 we hd"><div class="t m0 x2 he y11 ff4 fs3 fc0 sc0 ls0 ws0">                 (O)</div></div><div class="c x6 y13 wf hd"><div class="t m0 x2 he y11 ff4 fs3 fc0 sc0 ls0 ws0">Tel No :</div></div><div class="c x5 y14 we hd"><div class="t m0 x2 he yf ff4 fs3 fc0 sc0 ls0 ws0">I/C No.</div></div><div class="c x6 y14 w10 hd"><div class="t m0 x2 he yf ff4 fs3 fc0 sc0 ls0 ws0">D/Licence No.</div></div><div class="c x0 y15 wc hd"><div class="t m0 x2 hc yf ff3 fs3 fc0 sc0 ls0 ws0">2.</div></div><div class="c x5 y15 wd hd"><div class="t m0 x2 hc yf ff3 fs3 fc0 sc0 ls0 ws0">PARTICULARS OF VEHICLE : -</div></div><div class="c x5 y16 we hd"><div class="t m0 x2 hc y11 ff3 fs3 fc0 sc0 ls0 ws0">Make</div></div><div class="c x3 y16 w4 hd"><div class="t m0 x2 hc y11 ff3 fs3 fc0 sc0 ls0 ws0">Model</div></div><div class="c x6 y16 w10 hd"><div class="t m0 x2 hc y11 ff3 fs3 fc0 sc0 ls0 ws0">Key Tag No.</div></div><div class="c x6 y17 wf h8"><div class="t m0 x2 hc yf ff3 fs3 fc0 sc0 ls0 ws0">Colour</div></div><div class="c x0 y18 wc hd"><div class="t m0 x2 hc y11 ff3 fs3 fc0 sc0 ls0 ws0">3.</div></div><div class="c x5 y18 we hd"><div class="t m0 x2 hc y11 ff3 fs3 fc0 sc0 ls0 ws0">PRICE</div></div><div class="c x5 y19 we h8"><div class="t m0 x2 he yf ff4 fs3 fc0 sc0 ls0 ws0">Showroom</div></div><div class="c x6 y19 w11 h8"><div class="t m0 x2 he yf ff4 fs3 fc0 sc0 ls0 ws0">$</div></div><div class="c x5 y1a w12 hd"><div class="t m0 x2 he y11 ff4 fs3 fc0 sc0 ls0 ws0">Road Tax, Registration Fee &amp; Number Plates</div></div><div class="c x6 y1a w11 hd"><div class="t m0 x2 he y11 ff4 fs3 fc0 sc0 ls0 ws0">$</div></div><div class="c x5 y1b we h8"><div class="t m0 x2 he yf ff4 fs3 fc0 sc0 ls0 ws0">Insurance ($</div></div><div class="c x7 y1b w13 h8"><div class="t m0 x2 he yf ff4 fs3 fc0 sc0 ls0 ws0">less NCB $</div></div><div class="c x4 y1b wa h8"><div class="t m0 x2 he yf ff4 fs3 fc0 sc0 ls0 ws0">                            )</div></div><div class="c x6 y1b w11 h8"><div class="t m0 x2 he yf ff4 fs3 fc0 sc0 ls0 ws0">$</div></div><div class="c x5 y1c we hd"><div class="t m0 x2 he y11 ff4 fs3 fc0 sc0 ls0 ws0">Towing Fee</div></div><div class="c x6 y1c w11 hd"><div class="t m0 x2 he y11 ff4 fs3 fc0 sc0 ls0 ws0">$</div></div><div class="c x5 y1d we hf"><div class="t m0 x2 he yf ff4 fs3 fc0 sc0 ls0 ws0">Add. Items</div></div><div class="c x8 y1d w14 hf"><div class="t m0 x2 h10 y1e ff4 fs4 fc0 sc0 ls0 ws0">Bodykit</div></div><div class="c x7 y1d w15 hf"><div class="t m0 x2 h10 y1e ff4 fs4 fc0 sc0 ls0 ws0">        Rims &amp; Tyres</div></div><div class="c x9 y1d w16 hf"><div class="t m0 x2 h10 y1e ff4 fs4 fc0 sc0 ls0 ws0">       Others</div></div><div class="c x6 y1d w11 hf"><div class="t m0 x2 he yf ff4 fs3 fc0 sc0 ls0 ws0">$</div></div><div class="c x9 y1f w17 hf"><div class="t m0 x2 h10 y1e ff4 fs4 fc0 sc0 ls0 ws0">       (eg Promotion Package)</div></div><div class="c x5 y20 we hd"><div class="t m0 x2 hc yf ff3 fs3 fc0 sc0 ls0 ws0">TOTAL PRICE</div></div><div class="c x6 y20 w11 hd"><div class="t m0 x2 hc yf ff3 fs3 fc0 sc0 ls0 ws0">$</div></div><div class="c x5 y21 we h8"><div class="t m0 x2 h10 y22 ff4 fs4 fc0 sc0 ls0 ws0">Complimentary</div></div><div class="c x8 y21 w14 h8"><div class="t m0 x2 h10 y22 ff4 fs4 fc0 sc0 ls0 ws0">Audio System</div></div><div class="c x7 y21 w15 h8"><div class="t m0 x2 h10 y22 ff4 fs4 fc0 sc0 ls0 ws0">        Bed Liner</div></div><div class="c x9 y21 w16 h8"><div class="t m0 x2 h10 y22 ff4 fs4 fc0 sc0 ls0 ws0">       Others</div></div><div class="c x0 y23 wc hd"><div class="t m0 x2 hc y11 ff3 fs3 fc0 sc0 ls0 ws0">4.</div></div><div class="c x5 y23 wd hd"><div class="t m0 x2 hc y11 ff3 fs3 fc0 sc0 ls0 ws0">MODE OF PAYMENTS :-</div></div><div class="c x5 y24 w18 h8"><div class="t m0 x2 he yf ff4 fs3 fc0 sc0 ls0 ws0">Cash Deposit paid</div></div><div class="c x9 y24 w16 h8"><div class="t m0 x2 he yf ff4 fs3 fc0 sc0 ls0 ws0">(Rec. No  </div></div><div class="c x4 y24 wa h8"><div class="t m0 x2 he yf ff4 fs3 fc0 sc0 ls0 ws0">                            )</div></div><div class="c x6 y24 w11 h8"><div class="t m0 x2 he yf ff4 fs3 fc0 sc0 ls0 ws0">$</div></div><div class="c x5 y25 w18 hd"><div class="t m0 x2 he y11 ff4 fs3 fc0 sc0 ls0 ws0">Trade In Amount</div></div><div class="c x6 y25 w11 hd"><div class="t m0 x2 he y11 ff4 fs3 fc0 sc0 ls0 ws0">$</div></div><div class="c x5 y26 we h8"><div class="t m0 x2 he yf ff4 fs3 fc0 sc0 ls0 ws0">Discount</div></div><div class="c x6 y26 w11 h8"><div class="t m0 x2 he yf ff4 fs3 fc0 sc0 ls0 ws0">$ (</div></div><div class="c xa y26 w19 h8"><div class="t m0 x2 he yf ff4 fs3 fc0 sc0 ls0 ws0">      )</div></div><div class="c x5 y27 w18 hd"><div class="t m0 x2 he y11 ff4 fs3 fc0 sc0 ls0 ws0">Net Down Payment</div></div><div class="c x9 y27 w16 hd"><div class="t m0 x2 he y11 ff4 fs3 fc0 sc0 ls0 ws0">(Rec. No </div></div><div class="c x4 y27 w1a hd"><div class="t m0 x2 he y11 ff4 fs3 fc0 sc0 ls0 ws0">                             )</div></div><div class="c x6 y27 w11 hd"><div class="t m0 x2 he y11 ff4 fs3 fc0 sc0 ls0 ws0">$</div></div><div class="c x5 y28 w12 h8"><div class="t m0 x2 he yf ff4 fs3 fc0 sc0 ls0 ws0">Loan - CASH/GL/BIBD/TAIB/RBA/BFB</div></div><div class="c x6 y28 w11 h8"><div class="t m0 x2 he yf ff4 fs3 fc0 sc0 ls0 ws0">$</div></div><div class="c x5 y29 w1b hd"><div class="t m0 x2 hc y11 ff3 fs3 fc0 sc0 ls0 ws0">ON THE ROAD PRICE :</div></div><div class="c x6 y29 w11 hd"><div class="t m0 x2 hc y11 ff3 fs3 fc0 sc0 ls0 ws0">$</div></div><div class="c x0 y2a wc h11"><div class="t m0 x2 hc yf ff3 fs3 fc0 sc0 ls0 ws0">5.</div></div><div class="c x5 y2a w18 h11"><div class="t m0 x2 hc yf ff3 fs3 fc0 sc0 ls0 ws0">DELIVERY DATE :</div></div><div class="c x0 y2b wc h8"><div class="t m0 x2 hc yf ff3 fs3 fc0 sc0 ls0 ws0">6.</div></div><div class="c x5 y2b w12 h8"><div class="t m0 x2 hc yf ff3 fs3 fc0 sc0 ls0 ws0">PARTICULARS OF TRADE-IN VEHICLE : -</div></div><div class="c x5 y2c w18 hd"><div class="t m0 x2 he y11 ff4 fs3 fc0 sc0 ls0 ws0">Make/Model/Year</div></div><div class="c x6 y2c wf hd"><div class="t m0 x2 he y11 ff4 fs3 fc0 sc0 ls0 ws0">Regn. No :</div></div><div class="c x5 y2d we h8"><div class="t m0 x2 he yf ff4 fs3 fc0 sc0 ls0 ws0">Engine No :</div></div><div class="c x3 y2d w4 h8"><div class="t m0 x2 he yf ff4 fs3 fc0 sc0 ls0 ws0">Chassis No :</div></div><div class="c x6 y2d wf h8"><div class="t m0 x2 he yf ff4 fs3 fc0 sc0 ls0 ws0">Year</div></div><div class="c x0 y2e wc hd"><div class="t m0 x2 hc y11 ff3 fs3 fc0 sc0 ls0 ws0">7.</div></div><div class="c x5 y2e we hd"><div class="t m0 x2 hc y11 ff3 fs3 fc0 sc0 ls0 ws0">REMARKS:</div></div><div class="c x0 y2f w5 hb"><div class="t m0 xb hc y11 ff3 fs3 fc0 sc0 ls0 ws0">Customer </div></div><div class="c x3 y2f w8 hb"><div class="t m0 x5 he y11 ff4 fs3 fc0 sc0 ls0 ws0">Sales Representative</div></div><div class="c xc y2f w1c hb"><div class="t m0 xd he y11 ff4 fs3 fc0 sc0 ls0 ws0">Authorised Signature</div></div><div class="c x3 y30 w8 h11"><div class="t m0 xe he y11 ff4 fs3 fc0 sc0 ls0 ws0">(Code SPP                   )</div></div><div class="c x0 y31 w1d h12"><div class="t m0 x2 h13 y32 ff4 fs1 fc0 sc0 ls0 ws0">Para pelanggan di minta supaya tidak menandatangani <span class="ff3">ORDER FORM </span>ini jika semua kehendak form ini tidak di isi penuh oleh <span class="ff3">WAKIL PENJUAL.</span></div></div><div class="c x0 y33 w1e h12"><div class="t m0 x2 h14 y32 ff5 fs1 fc0 sc0 ls0 ws0">Customers are kindly requested to refrain from signing this<span class="ff6"> ORDER FORM</span> if above particulars are not completely filled by our <span class="ff6">SALES REPRESENTATIVE.</span></div></div></div><div class="pi" data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'></div></div>
+                </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../public/js/scripts.js"></script>
+    <script src="../public/js/printables.js"></script>
+    <script>
+        // function myFunction() {
+        //   return 'you sure my man?';
+        // }
+        window.addEventListener("beforeunload", function (e) {
+    var confirmationMessage = 'It looks like you have been editing something. '
+                            + 'If you leave before saving, your changes will be lost.';
+
+    (e || window.event).returnValue = confirmationMessage; //Gecko + IE
+    return confirmationMessage; //Gecko + Webkit, Safari, Chrome etc.
+});
+    </script>
+
+</body>
+
+</html>

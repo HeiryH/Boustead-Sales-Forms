@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../public/img/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link rel="stylesheet" href="../public/css/styles.css" />
+    <link rel="stylesheet" href="../public/css/printables.css" />
+
+</head>
+
+<body>
+
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar-->
+        <%- include ("./partials/sidebar") %>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <%- include ("./partials/header") %>
+                    <!-- Page content-->
+                    <div id="container1">
+                        <p>Invoice form</p>
+                        <a id="myBtn" href="" class="btn btn-primary"> Print </a>
+                        <!-- <a href="index.html"> home</a> -->
+                    </div>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>Confirm to printing</p>
+                            <a href="/printables/invoiceformpage" target="_blank" class="btn btn-primary"> proceed </a>
+                        </div>
+                    </div>
+            </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../public/js/scripts.js"></script>
+    <script src="../public/js/printables.js"></script>
+
+</body>
+
+</html>
